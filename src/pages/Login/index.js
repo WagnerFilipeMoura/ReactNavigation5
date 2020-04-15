@@ -5,7 +5,6 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  TouchableHighlight,
 } from 'react-native';
 
 export default function Login({navigation}) {
@@ -16,7 +15,9 @@ export default function Login({navigation}) {
       <TextInput style={styles.input} placeholder="Digite seu email" />
       <TextInput style={styles.input} placeholder="Digite sua senha" />
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Inicio')}
+        style={styles.button}>
         <Text style={styles.textButton}>Acessar</Text>
       </TouchableOpacity>
 
