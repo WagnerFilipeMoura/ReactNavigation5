@@ -16,7 +16,7 @@ export default function Login({navigation}) {
       <TextInput style={styles.input} placeholder="Digite sua senha" />
 
       <TouchableOpacity
-        onPress={() => navigation.navigate('Inicio')}
+        onPress={() => navigation.navigate('TabScreen')}
         style={styles.button}>
         <Text style={styles.textButton}>Acessar</Text>
       </TouchableOpacity>

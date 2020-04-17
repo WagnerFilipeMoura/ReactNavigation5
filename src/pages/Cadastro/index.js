@@ -5,7 +5,6 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  TouchableHighlight,
 } from 'react-native';
 
 export default function Cadastro({navigation}) {
