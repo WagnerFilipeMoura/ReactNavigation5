@@ -17,6 +17,9 @@ import Financas2 from './pages/Principal/Inicio/Financas/2';
 import Negocios from './pages/Principal/Inicio/Negocios';
 import MeuDinheiro from './pages/Principal/Inicio/MeuDinheiro';
 import Clientes from './pages/Principal/Inicio/Clientes';
+import Fornecedores from './pages/Principal/Inicio/Fornecedores';
+import Graficos from './pages/Principal/Inicio/Graficos';
+import Atualizacao from './pages/Principal/Inicio/Atualizacao';
 
 Icon.loadFont();
 
@@ -106,6 +109,30 @@ function StackInicio() {
         component={Clientes}
         options={{
           title: 'Clientes',
+          headerTintColor: '#fff',
+        }}
+      />
+      <Stack.Screen
+        name="Fornecedores"
+        component={Fornecedores}
+        options={{
+          title: 'Fornecedores',
+          headerTintColor: '#fff',
+        }}
+      />
+      <Stack.Screen
+        name="Graficos"
+        component={Graficos}
+        options={{
+          title: 'Graficos',
+          headerTintColor: '#fff',
+        }}
+      />
+      <Stack.Screen
+        name="Atualizacao"
+        component={Atualizacao}
+        options={{
+          title: 'Atualização',
           headerTintColor: '#fff',
         }}
       />

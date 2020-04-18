@@ -31,19 +31,27 @@ export default function Inicio({navigation}) {
         <Icon name="business-center" size={70} color={'#FFF'} />
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.dash}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Fornecedores')}
+        style={styles.dash}>
         <Icon name="create-new-folder" size={70} color={'#FFF'} />
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.dash}>
-        <Icon name="cached" size={70} color={'#FFF'} />
-      </TouchableOpacity>
-
-      <TouchableOpacity style={styles.dash}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Graficos')}
+        style={styles.dash}>
         <Icon name="insert-chart" size={70} color={'#FFF'} />
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.dash}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Atualizacao')}
+        style={styles.dash}>
+        <Icon name="cached" size={70} color={'#FFF'} />
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Login')}
+        style={styles.dash}>
         <Icon name="build" size={70} color={'#FFF'} />
       </TouchableOpacity>
     </View>
